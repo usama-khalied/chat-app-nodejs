@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style1.css" />
+  </head>
+  <body>
+    <div class="typing"></div> 
+    <section class="chat_section">
+      <div class="brand">
+        
+        <h1>Chat</h1>
+        <i class="fa fa-commenting" aria-hidden="true"></i>
+        <p id="bodcast"></p>
+      </div>
+      <hr />
+      <div class="message_area"></div>
+      <div>
+        <textarea
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Write a text...!"
+        ></textarea>
+      </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./client.js"></script>
+
+    <script src="https://kit.fontawesome.com/6fcb08b902.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!-- 
+<div class="incoming message">
+  <h4>Rakesh</h4>
+  <p>Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+
+  <div class="outgoing message">
+    <h4>Rakesh</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem quo excepturi. Labore deleniti nulla harum at laborum similique quibusdam quod, minima aspernatur natus eum, sequi voluptatum assumenda iure consequatur laboriosam fugit ut perspiciatis excepturi vitae illo sapiente? Recusandae, velit.</p>
+  </div> -->
