@@ -1,9 +1,14 @@
 let socket = io();
 var na;
+// const peer = new Peer();
 let textarea = document.querySelector("#textarea");
 let messageArea = document.querySelector(".message_area");
-let name;
+let name = "Usama";
+
 let bodcastmessage  =  document.querySelector('#bodcast');
+
+const startButton = document.getElementById('start-button');
+
 
 var typing=false
 do {
@@ -66,11 +71,12 @@ textarea.addEventListener("keypress", logKey);
 function logKey(e) {
   socket.emit("typing", name);
 }
-
-
 socket.on("typing", (name) => {
   bodcast.innerHTML = `<p>${name}</em> is typing...</p>`;
   setTimeout(() => {
     bodcast.innerHTML = "";
   }, 3000);
 });
+
+
+

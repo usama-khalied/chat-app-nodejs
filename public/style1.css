@@ -7,7 +7,7 @@ body {
     font-family: sans-serif;
 }
 section.chat_section {
-    width: 800px;
+    width: 500px;
     max-width: 90%;
     height:60vh;
     background: #fff;
@@ -17,6 +17,7 @@ section.chat_section {
 .brand {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: #fff;
      padding: 10px;
 }
@@ -84,4 +85,17 @@ section.chat_section {
     padding: 0;
     color: #333;
     font-size: 12px;
+}
+.videoCall  {
+ background-color: green;
+ border: 1px solid green;
+padding: 4px 10px;
+}
+.videoCall a {
+    text-decoration: none;    
+    color: white;
+    margin: 0 2px;
+}
+.videoCall .fa-video-camera {
+    color: white ;
 }
